@@ -1,11 +1,13 @@
 <?php
     session_start();
-    // if(!isset($_SESSION['mobile_num']))
-    // {
-    //     // not logged in
-    //     header('Location: ../commonPage/login.php');
-    //     exit();
-    // }
+    if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
+
+    // echo $_SESSION['user_name'];
 ?>
 
 
@@ -34,11 +36,11 @@
             <a href="loantable.php">
                 <li><span class="menu">Loan Request</span></li>
             </a>
-            <a href="admindonorHistory.php">
+            <!-- <a href="#">
                 <li><span class="menu">History</span></li>
-            </a>
+            </a> -->
             <a href="../commonPage/logout.php">
-                <li><span class="menu">Sign Out</span></li>
+                <li><span class="menu">Log Out</span></li>
             </a>
         
         </ul> 
@@ -46,7 +48,7 @@
     <div class="content">
         
             <div class="header">
-                Hello <?php 
+                Hello !<?php 
                             echo $_SESSION['user_name']; 
                         ?>
             </div>

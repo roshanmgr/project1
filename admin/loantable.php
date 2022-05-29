@@ -1,15 +1,15 @@
 <?php
 
     session_start();
-    // if(!isset($_SESSION['mobile_num']))
-    // {
-    //     // not logged in
-    //     header('Location: ../commonPage/login.php');
-    //     exit();
-    // }
+    if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
 ?>
 
-<?php include ('../user/u-header.php')?>
+<?php include ('a-header.php')?>
 
     <head>
         <title>Loan Requester Table</title>
@@ -154,7 +154,7 @@
         for($i=1;$i<=$total_pages;$i++){
 
 
-            echo '<a style="font-size:12px;color:red;padding: 5px;bottom:0;" href="donorInfo.php?pages='.$i.'&search='.$_GET['search'].'   ">'.$i.'</a>';
+            echo '<a style="font-size:12px;color:red;padding: 5px;bottom:0;" href="loantable.php?pages='.$i.'&search='.$_GET['search'].'   ">'.$i.'</a>';
         }
         
     ?>

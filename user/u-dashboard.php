@@ -2,6 +2,13 @@
 
 session_start();
 
+if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
+
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 {
     // header("location: a-login.php");
@@ -56,9 +63,9 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
             <a href="loanrequest.php">
                 <li><span class="menu">Request Loan</span></li>
             </a>
-            <a href="admindonorHistory.php">
+            <!-- <a href="#">
                 <li><span class="menu">History</span></li>
-            </a>
+            </a> -->
             <a href="../commonPage/logout.php">
                 <li><span class="menu">Log Out</span></li>
             </a>

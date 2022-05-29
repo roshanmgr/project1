@@ -16,11 +16,11 @@
             <a href="#" class="logo">  <span style="color:brown">S</span><span style="color:blueviolet">A</span><span style="color:greenyellow">H</span><span style="color:red">A</span><span style="color:grey">Y</span><span style="color:yellowgreen">O</span><span style="color:purple">G</span><span style="color:lavender">I</span> </a>
         </div>
         
-            <ul class="nav-links">
+            <!-- <ul class="nav-links">
                 <li><a href="a-dashboard.php">Go to Dashboard</a></li>
-            </ul>
+            </ul> -->
 
             <div class="signOut-buttons">
-            <a href = "../commonPage/logout.php" class="signOut">Sign out</a>            
+            <a href = "a-dashboard.php" class="signOut">Back</a>            
             </div>
     </nav>

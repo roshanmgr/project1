@@ -1,11 +1,11 @@
 <?php
     session_start();
-    // if(!isset($_SESSION['username']))
-    // {
-    //     // not logged in
-    //     header('Location: ../login.php');
-    //     exit();
-    // }
+    if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
 ?>
 
 <?php include ('a-header.php')?>

@@ -4,12 +4,12 @@
 
     session_start();
     
-    // if(!isset($_SESSION['mobile_num']))
-    // {
-    //     // not logged in
-    //     header('Location: ../login.php');
-    //     exit();
-    // }
+    if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
 
 
     $id = $_GET['id'];

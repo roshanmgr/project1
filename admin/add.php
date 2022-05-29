@@ -1,12 +1,12 @@
 <?php
     include "../database/config.php";
     session_start();
-    // if(!isset($_SESSION['mobile_num']))
-    // {
-    //     // not logged in
-    //     header('Location: ../commonPage/login.php');
-    //     exit();
-    // }
+    if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
 
     
 ?>

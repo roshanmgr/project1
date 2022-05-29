@@ -1,5 +1,15 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['user_name']))
+    {
+        // not logged in
+        header('Location: ../commonPage/login.php');
+        exit();
+    }
 
-<!-- <?php include 'u-header.php'?> -->
+    // echo $_SESSION['user_name'];
+?>
+<?php include 'u-header.php'?>
 
 
 <?php
@@ -94,6 +104,4 @@
     </div>
     </center>
 
-    <script src="../js/form.js"></script>
-
-<!-- <?php include 'footer.php'?> -->
+    <script src="../js/loanvalidation.js"></script>

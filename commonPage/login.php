@@ -37,7 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     }else{
         //  echo $password;
-        echo '<script>alert("Either mobile number or Password is invalid")</script>';
+        // echo '<script>alert("Either mobile number or Password is invalid")</script>';
+        $err = "* Your Admin Login Name or Password is invalid";
     }
 }
 ?>
@@ -52,6 +53,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/dynamic.css">
+
 </head>
 <body>
     <?php
@@ -59,6 +62,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
 <form class="login-form" method="post">
         <h3>login now </h3>
+        <div class="err">
+    <?php 
+    
+    error_reporting(E_ERROR | E_PARSE);     
+
+    echo $err; 
+    
+    ?>
+    </div>
         <input type="text" name="mobile_num" placeholder="Mobile number" autocomplete="off" class="box">
         <input type="password" name="password" placeholder="your password" class="box">
         <!-- <p><a href="forgetpassword.php">forget password ?</a></p> -->

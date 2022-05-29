@@ -3,12 +3,13 @@
     justify-content: center;
     color: green;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 24px;
 }
 .err{
     display: flex;
     justify-content: center;
-    color: whitesmoke;
+    color: red;
     font-weight: bold;
 }
 .addInfo{

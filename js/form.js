@@ -157,10 +157,21 @@ function formValidation() {
         return false;
     }
 
+    //Loan Amount Valition
+    if(loanamount.value === ""){
+        document.getElementById("rLoanamountErr").innerHTML ="* Please Enter Amount";
+        return false;
+    }
+
+    if(loanamount.value.length < 100 || age.value.length > 5000) {
+        document.getElementById("rLoanamountErr").innerHTML="* Please Enter Amount between RS 100 to 5,000";
+        return false;
+    }
+
 
     //email validation
     if(email.value === ""){
-        document.getElementById("rEmailErr").innerHTML = "* Plese enter your email !";
+        document.getElementById("rEmailErr").innerHTML = "* Please enter your email !";
         return false;
     }
 

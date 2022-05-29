@@ -1,0 +1,104 @@
+:root {
+    --blue: #2709d1;
+    --black: #130f40;
+    --light-color: #A8A8A8;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: 0.2rem solid var(--black);
+  }
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A8A8A8;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+  }
+  
+  .home .content {
+    text-align: center;
+    width: 60rem;
+  }
+  
+  .home .content h3 {
+    color: whitesmoke;
+    font-size: 3rem;
+  }
+  
+  .home .content h3 span {
+    color: var(--blue);
+  }
+  
+  .home .content p {
+    color: whitesmoke;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+  }
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid whitesmoke;
+    color: whitesmoke;
+    cursor: pointer;
+    background: none;
+  }
+  
+  /* body section ends  */
+  
+  /* features section starts */
+  .features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .features .box-container .box {
+    padding: 3rem 2rem;
+    background: #A8A8A8;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .features .box-container .box:hover {
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+  }
+  
+  .features .box-container .box img {
+    margin: 1rem 0;
+    height: 15rem;
+  }
+  
+  .features .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+  }
+  
+  .features .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+  }
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid whitesmoke;
+    color: whitesmoke;
+    cursor: pointer;
+    background: none;
+  }

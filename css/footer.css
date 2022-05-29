@@ -1,0 +1,124 @@
+
+:root {
+    --orange: #684efa;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --outline-hover: 0.2rem solid var(--black);
+  }
+  
+  .footer {
+    background: #666;
+  }
+  
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer .box-container .box h3 i {
+    color: whitesmoke;
+  }
+  
+  .footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: 0.5rem;
+  }
+  
+  .footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+  }
+
+  .footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    border-top: var(--border);
+  }
+  
+  .footer .credit span {
+    color: var(--orange);
+  }
+  
+  /* media queries  */
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+  
+    .header {
+      padding: 2rem;
+    }
+  
+    section {
+      padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+  
+    .header .search-form {
+      width: 90%;
+    }
+  
+    .header .navbar {
+      position: absolute;
+      top: 110%;
+      right: -110%;
+      width: 30rem;
+      box-shadow: var(--box-shadow);
+      border-radius: 0.5rem;
+      background: #fff;
+    }
+  
+    .header .navbar.active {
+      right: 2rem;
+      transition: 0.4s linear;
+    }
+  
+    .header .navbar a {
+      font-size: 2rem;
+      margin: 2rem 2.5rem;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  
+    .heading {
+      font-size: 2.5rem;
+    }
+  
+    .footer {
+      text-align: center;
+    }
+  }
+  

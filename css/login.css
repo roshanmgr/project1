@@ -1,0 +1,61 @@
+.login-form {
+    position: absolute;
+    top: 25%;
+    right: 31%;
+    width: 40rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+  
+.login-form.active {
+    right: 2rem;
+    transition: 0.4s linear;
+  }
+  
+.login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+  
+.login-form .box {
+    width: 100%;
+    margin: 0.7rem 0;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+  }
+  
+.login-form p {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    color: var(--light-color);
+  }
+  
+.login-form p a {
+    color: var(--orange);
+    text-decoration: underline;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+  }
+  
+  .btn:hover {
+    background: var(--orange);
+    color: blue;
+  }

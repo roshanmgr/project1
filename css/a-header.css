@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    font-family:"Arial";
+    /* position: fixed; */
+  }
+  .header{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height:90px;
+    background: #A8A8A8;
+    position: fixed;
+    width: 100vw;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+  }
+
+  .logo h1{
+    margin-left:30px;
+    color: white;
+  }
+
+  .logo img{
+    width:40px;
+    height:40px;
+  }
+
+  .nav-links{
+    display:flex;
+    justify-content:space-around;
+    margin-left:450px;
+    position: sticky;
+  }
+
+  .nav-links li{
+    list-style:none;
+    text-decoration:none;
+    margin-right:40px;
+  }
+
+  .nav-links li a{
+    text-decoration:none;
+    color:white;
+  }
+
+  .signOut-buttons{
+    display:flex;
+    justify-content:space-around;
+  }
+
+  .signOut{
+    margin-right:40px;
+    text-decoration:none;
+    background:#333;
+    color:white;
+    padding:5px 10px 5px 10px;
+    border-radius:5px;
+  }

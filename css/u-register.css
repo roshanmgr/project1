@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+
+body{
+  height: 100vh;
+  background: #e1edf9;
+}
+
+.wrapper{
+  max-width: 575px;
+  width: 100%;
+  margin: 30px auto 0;
+  padding: 10px;
+}
+
+.wrapper .form_container{
+  background:  whitesmoke;
+  padding: 30px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  margin-top: 3rem;
+}
+.r-heading{
+  background: #A8A8A8;
+  margin: -30px;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  margin-bottom: 35px;
+  padding: 10px;
+}
+.wrapper .form_container .form_item{
+  margin-bottom: 25px;
+}
+
+.form_wrap.fullname,
+.form_wrap.select_box{
+  display: flex;
+}
+
+.form_wrap.fullname .form_item,
+.form_wrap.select_box .form_item{
+  width: 50%;
+}
+
+.form_wrap.fullname .form_item:first-child,
+.form_wrap.select_box .form_item:first-child{
+  margin-right: 4%;
+}
+
+.wrapper .form_container .form_item label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form_item input[type="text"],
+.form_item select{
+  width: 100%;
+  padding: 2px;
+  font-size: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+}
+
+.form_item input[type="text"]:focus{
+  border-color: #6271f0;
+}
+.button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #16a085;
+  border: 1px solid #16a085;
+  cursor: pointer;
+}
+    .container {
+        padding: 16px;
+    }

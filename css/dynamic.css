@@ -1,0 +1,22 @@
+.success{
+    display: flex;
+    justify-content: center;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+.err{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.addInfo{
+    display: inline-block;
+    margin-left: 100px;
+}
+.search{
+    display: inline-block;
+    /* float: right; */
+    margin-right: 100px;
+}

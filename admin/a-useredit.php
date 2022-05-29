@@ -67,7 +67,7 @@ if(isset($_POST['submit'])) {
 
     <div style="float: left; margin-left: 70px; ">
         <button >
-            <a style="text-decoration: none; font-weight: bold; color: black; font-size: 16px;" href="admindonorHistory.php">
+            <a style="text-decoration: none; font-weight: bold; color: black; font-size: 16px;" href="a-usertable.php">
                 Back
             </a>
         </button>
@@ -164,7 +164,7 @@ if(isset($_POST['submit'])) {
     </div>
     </center>
 
-<script src="../js/addEditValidation.js"></script>
+<script src="../js/editValidation.js"></script>
 
 </body>
 </html>

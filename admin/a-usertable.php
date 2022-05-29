@@ -25,10 +25,10 @@
     <div class="search">
         <h4>Search <i class="fa-solid fa-magnifying-glass"></i> </h4>
         
-        <form action="admindonorHistory.php" method="get">
+        <form action="a-usertable.php" method="get">
             <input type="hidden" name="pages" value="1"> 
             <input type="text" name="search" value="" placeholder="Search through name">
-            <button type="submit">Submit</button>
+            <button type="submit">Search</button>
         </form> 
     </div>
 
